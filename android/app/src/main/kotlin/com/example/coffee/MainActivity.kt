@@ -1,4 +1,4 @@
-package com.example.flutter_web_coffee
+package com.example.coffee
 
 import io.flutter.embedding.android.FlutterActivity
 
