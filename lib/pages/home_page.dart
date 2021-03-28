@@ -1,7 +1,10 @@
 import 'package:coffee/util/keys.dart';
+import 'package:coffee/util/sizing_info.dart';
 import 'package:coffee/values/responsive_app.dart';
 import 'package:coffee/widgets/components/carousel.dart';
+import 'package:coffee/widgets/mobile_components/shop_app_bar.dart';
 import 'package:coffee/widgets/web_components/body/section_list.dart';
+import 'package:coffee/widgets/web_components/footer/footer.dart';
 import 'package:coffee/widgets/web_components/header/header.dart';
 import 'package:flutter/material.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
@@ -56,15 +59,15 @@ class _HomePageState extends State<HomePage> {
           child: Icon(Icons.arrow_upward),
         ),
       ),
-      appBar: Header(_opacity),
-      /* appBar:
+       appBar:
           isMobileAndTablet(context) ? ShopAppBar(_opacity) : Header(_opacity),
-      drawer: ShopDrawer(),*/
+      //drawer: ShopDrawer(),
       body: ListView(
         controller: autoScrollController,
         children: [
           Carousel(),
           SectionListView(autoScrollController),
+          Footer(),
           /*isMobileAndTablet(context)
               ? MenuTap()
               : SectionListView(autoScrollController),
