@@ -4,6 +4,7 @@ import 'package:coffee/values/responsive_app.dart';
 import 'package:coffee/widgets/components/carousel.dart';
 import 'package:coffee/widgets/mobile_components/menu_tap.dart';
 import 'package:coffee/widgets/mobile_components/shop_app_bar.dart';
+import 'package:coffee/widgets/mobile_components/shop_drawer.dart';
 import 'package:coffee/widgets/web_components/body/section_list.dart';
 import 'package:coffee/widgets/web_components/footer/footer.dart';
 import 'package:coffee/widgets/web_components/header/header.dart';
@@ -62,7 +63,7 @@ class _HomePageState extends State<HomePage> {
       ),
        appBar:
           isMobileAndTablet(context) ? ShopAppBar(_opacity) : Header(_opacity),
-      //drawer: ShopDrawer(),
+      drawer: ShopDrawer(),
       body: ListView(
         controller: autoScrollController,
         children: [
