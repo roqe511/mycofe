@@ -1,18 +1,18 @@
-import 'package:coffee/widgets/carousel.dart';
-import 'package:coffee/widgets/header.dart';
+
+import 'package:coffee/widgets/web_components/body/menu_section.dart';
 import 'package:flutter/material.dart';
 import 'package:coffee/util/keys.dart';
 import 'package:coffee/util/sizing_info.dart';
 import 'package:coffee/values/responsive_app.dart';
 
-// import 'package:coffee/widgets/components/carousel.dart';
+import 'package:coffee/widgets/components/carousel.dart';
 // import 'package:coffee/widgets/mobile_components/menu_tap.dart';
 // import 'package:coffee/widgets/mobile_components/shop_app_bar.dart';
 // import 'package:coffee/widgets/mobile_components/shop_drawer.dart';
 // import 'package:coffee/widgets/web_components/body/menu_section.dart';
 // import 'package:coffee/widgets/web_components/body/section_list.dart';
 // import 'package:coffee/widgets/web_components/footer/footer.dart';
-// import 'package:coffee/widgets/web_components/header/header.dart';
+import 'package:coffee/widgets/web_components/header/header.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 
 class HomePage extends StatefulWidget {
@@ -73,6 +73,7 @@ class _HomePageState extends State<HomePage> {
         controller: autoScrollController,
         children: [
           Carousel(),
+          MenuSection(autoScrollController)
           /*isMobileAndTablet(context)
               ? MenuTap()
               : SectionListView(autoScrollController),
