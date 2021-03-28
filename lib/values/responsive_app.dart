@@ -1,6 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:coffee/util/sizing_info.dart';
 import 'package:coffee/values/edge_insets_app.dart';
+import 'package:flutter/cupertino.dart';
 
 class ResponsiveApp {
   BuildContext _context;

@@ -1,4 +1,3 @@
-
 import 'package:coffee/util/keys.dart';
 import 'package:coffee/values/responsive_app.dart';
 import 'package:coffee/widgets/components/carousel.dart';
@@ -57,8 +56,8 @@ class _HomePageState extends State<HomePage> {
           child: Icon(Icons.arrow_upward),
         ),
       ),
-     appBar: Header(_opacity),
-     /* appBar:
+      appBar: Header(_opacity),
+      /* appBar:
           isMobileAndTablet(context) ? ShopAppBar(_opacity) : Header(_opacity),
       drawer: ShopDrawer(),*/
       body: ListView(

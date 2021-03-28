@@ -1,9 +1,9 @@
 import 'dart:ui';
 
-import 'package:flutter/material.dart';
 import 'package:coffee/values/string_app.dart';
+import 'package:flutter/material.dart';
 
-// import 'product.dart';
+import 'product.dart';
 
 class Section {
   String title;
@@ -19,24 +19,24 @@ List<Section> sections = [
     title: coffeesStr,
     color: Colors.yellow,
     subtitle: "Cafe 100% puro",
-    //list: coffeesList,
+    list: coffeesList,
   ),
   Section(
     title: drinksStr,
     color: Colors.red,
     subtitle: "Bebidas de todos los sabores",
-    // list: drinksList,
+    list: drinksList,
   ),
   Section(
     title: cakesStr,
     color: Colors.blue,
     subtitle: "Pasteles deliciosos",
-    // list: cakesList,
+    list: cakesList,
   ),
   Section(
     title: sandwichesStr,
     color: Colors.purpleAccent,
     subtitle: "Come algo ligero",
-    //list: sandwichesList,
+    list: sandwichesList,
   )
 ];

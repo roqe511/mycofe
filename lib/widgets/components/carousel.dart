@@ -1,10 +1,9 @@
 import 'package:carousel_slider/carousel_controller.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:flutter/material.dart';
-
 import 'package:coffee/models/carousel.dart';
 import 'package:coffee/util/sizing_info.dart';
 import 'package:coffee/values/responsive_app.dart';
+import 'package:flutter/material.dart';
 
 class Carousel extends StatefulWidget {
   @override
@@ -25,7 +24,6 @@ class _CarouselState extends State<Carousel> {
             borderRadius:
                 BorderRadius.circular(responsiveApp.carouselRadiusWidth),
             child: Image.asset(
-
               element.image,
               fit: BoxFit.cover,
             ),
