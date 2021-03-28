@@ -1,3 +1,4 @@
+import 'package:coffee/widgets/header.dart';
 import 'package:flutter/material.dart';
 import 'package:coffee/util/keys.dart';
 import 'package:coffee/util/sizing_info.dart';
@@ -63,6 +64,7 @@ class _HomePageState extends State<HomePage> {
           child: Icon(Icons.arrow_upward),
         ),
       ),
+     appBar: Header(_opacity),
      /* appBar:
           isMobileAndTablet(context) ? ShopAppBar(_opacity) : Header(_opacity),
       drawer: ShopDrawer(),
