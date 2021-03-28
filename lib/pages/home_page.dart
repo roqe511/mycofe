@@ -2,6 +2,7 @@ import 'package:coffee/util/keys.dart';
 import 'package:coffee/util/sizing_info.dart';
 import 'package:coffee/values/responsive_app.dart';
 import 'package:coffee/widgets/components/carousel.dart';
+import 'package:coffee/widgets/mobile_components/menu_tap.dart';
 import 'package:coffee/widgets/mobile_components/shop_app_bar.dart';
 import 'package:coffee/widgets/web_components/body/section_list.dart';
 import 'package:coffee/widgets/web_components/footer/footer.dart';
@@ -66,12 +67,10 @@ class _HomePageState extends State<HomePage> {
         controller: autoScrollController,
         children: [
           Carousel(),
-          SectionListView(autoScrollController),
-          Footer(),
-          /*isMobileAndTablet(context)
+          isMobileAndTablet(context)
               ? MenuTap()
               : SectionListView(autoScrollController),
-          isMobileAndTablet(context) ? SizedBox.shrink() : Footer()*/
+          isMobileAndTablet(context) ? SizedBox.shrink() : Footer()
         ],
       ),
     );
