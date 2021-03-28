@@ -21,7 +21,7 @@ class ResponsiveApp {
   }
 
   //Container
-  get menuContainerHeight => setHeight(100);
+  get menuContainerHeight => setHeight(80);
 
   get menuContainerWidth => setWidth(110);
 
@@ -31,9 +31,9 @@ class ResponsiveApp {
 
   get carouselContainerHeight => setHeight(60);
 
-  get carouselCircleContainerWidth => setWidth(10);
+  get carouselCircleContainerWidth => setWidth(5);
 
-  get carouselCircleContainerHeight => setHeight(10);
+  get carouselCircleContainerHeight => setHeight(5);
 
   get menuTabContainerHeight => setHeight(400);
 
@@ -42,9 +42,9 @@ class ResponsiveApp {
   get sectionWidth => setWidth(8);
 
   //Radius
-  get menuRadiusWidth => setWidth(30);
+  get menuRadiusWidth => setWidth(20);
 
-  get carouselRadiusWidth => setWidth(10);
+  get carouselRadiusWidth => setWidth(5);
 
   //Images
   get menuImageHeight => setHeight(60);

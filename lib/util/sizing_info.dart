@@ -36,7 +36,7 @@ double get tabletLarge => 850;
 double get tabletExtraLarge => 900;
 
 //desktop size
-double get desktopSmall => 950;
+double get desktopSmall => 720;
 
 double get desktopNormal => 1920;
 

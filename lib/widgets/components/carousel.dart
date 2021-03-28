@@ -25,6 +25,7 @@ class _CarouselState extends State<Carousel> {
             borderRadius:
                 BorderRadius.circular(responsiveApp.carouselRadiusWidth),
             child: Image.asset(
+
               element.image,
               fit: BoxFit.cover,
             ),
