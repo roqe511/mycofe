@@ -1,3 +1,4 @@
+import 'package:coffee/widgets/carousel.dart';
 import 'package:coffee/widgets/header.dart';
 import 'package:flutter/material.dart';
 import 'package:coffee/util/keys.dart';
@@ -67,17 +68,17 @@ class _HomePageState extends State<HomePage> {
      appBar: Header(_opacity),
      /* appBar:
           isMobileAndTablet(context) ? ShopAppBar(_opacity) : Header(_opacity),
-      drawer: ShopDrawer(),
+      drawer: ShopDrawer(),*/
       body: ListView(
         controller: autoScrollController,
         children: [
           Carousel(),
-          isMobileAndTablet(context)
+          /*isMobileAndTablet(context)
               ? MenuTap()
               : SectionListView(autoScrollController),
-          isMobileAndTablet(context) ? SizedBox.shrink() : Footer()
+          isMobileAndTablet(context) ? SizedBox.shrink() : Footer()*/
         ],
-      ),*/
+      ),
     );
   }
 }
