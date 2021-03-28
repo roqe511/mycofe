@@ -21,7 +21,7 @@ class ResponsiveApp {
   }
 
   //Container
-  get menuContainerHeight => setHeight(80);
+  get menuContainerHeight => setHeight(100);
 
   get menuContainerWidth => setWidth(110);
 
