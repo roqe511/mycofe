@@ -33,10 +33,11 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     autoScrollController = AutoScrollController(
-        //add this for advanced viewport boundary. e.g. SafeArea
-        viewportBoundaryGetter: () =>
-            Rect.fromLTRB(0, 0, 0, MediaQuery.of(context).padding.bottom),
-        axis: Axis.vertical);
+      //add this for advanced viewport boundary. e.g. SafeArea
+      viewportBoundaryGetter: () =>
+          Rect.fromLTRB(0, 0, 0, MediaQuery.of(context).padding.bottom),
+      axis: Axis.vertical,
+    );
 
     autoScrollController.addListener(_scrollListener);
     super.initState();
@@ -61,7 +62,7 @@ class _HomePageState extends State<HomePage> {
           child: Icon(Icons.arrow_upward),
         ),
       ),
-       appBar:
+      appBar:
           isMobileAndTablet(context) ? ShopAppBar(_opacity) : Header(_opacity),
       drawer: ShopDrawer(),
       body: ListView(

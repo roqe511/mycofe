@@ -15,19 +15,25 @@ class _ShopDrawerState extends State<ShopDrawer> {
   ResponsiveApp responsiveApp;
   @override
   Widget build(BuildContext context) {
-    responsiveApp=ResponsiveApp(context);
+    responsiveApp = ResponsiveApp(context);
     return Container(
-      width:responsiveApp.drawerWidth,
+      width: responsiveApp.drawerWidth,
       child: Drawer(
-        child:Container(
+        child: Container(
             color: Theme.of(context).backgroundColor,
-            child:  Column(
+            child: Column(
               children: [
                 UserAccountsDrawerHeader(
-                  accountName: Text(nameStr,style:Theme.of(context).textTheme.headline6),
+                  accountName: Text(
+                    nameStr,
+                    style: Theme.of(context).textTheme.headline6,
+                  ),
                   accountEmail: Text(emailDefaultStr),
-                  decoration: BoxDecoration(color: Theme.of(context).backgroundColor),
-                  currentAccountPicture: CircleAvatar(backgroundImage: AssetImage('assets/images/cody.jpg')),
+                  decoration:
+                      BoxDecoration(color: Theme.of(context).backgroundColor),
+                  currentAccountPicture: CircleAvatar(
+                    backgroundImage: AssetImage('assets/images/cody.jpg'),
+                  ),
                 ),
                 getItem(
                   onTap: () {},
@@ -36,8 +42,8 @@ class _ShopDrawerState extends State<ShopDrawer> {
                 ),
                 getItem(
                   onTap: () {},
-                  title:locationStr,
-                  icon:Icons.location_on_outlined,
+                  title: locationStr,
+                  icon: Icons.location_on_outlined,
                 ),
                 getItem(
                   onTap: () {},
@@ -45,14 +51,16 @@ class _ShopDrawerState extends State<ShopDrawer> {
                   icon: Icons.lock_outline,
                 ),
                 Expanded(
-                    child: Padding(padding:responsiveApp.edgeInsetsApp.allMediumEdgeInsets,child:Align(
-                      alignment: Alignment.bottomCenter,
-                      child: Text(
-                        copyrightStr,
-                        style:Theme.of(context).accentTextTheme.bodyText2,
-                      ),
+                    child: Padding(
+                  padding: responsiveApp.edgeInsetsApp.allMediumEdgeInsets,
+                  child: Align(
+                    alignment: Alignment.bottomCenter,
+                    child: Text(
+                      copyrightStr,
+                      style: Theme.of(context).accentTextTheme.bodyText2,
                     ),
-                    ))
+                  ),
+                ))
               ],
             )),
       ),
@@ -62,10 +70,7 @@ class _ShopDrawerState extends State<ShopDrawer> {
   getItem({String title, IconData icon, onTap}) {
     return ListTile(
       onTap: onTap,
-      title: Text(
-          title,
-          style:Theme.of(context).textTheme.bodyText2
-      ),
+      title: Text(title, style: Theme.of(context).textTheme.bodyText2),
       leading: Icon(
         icon,
         color: Theme.of(context).iconTheme.color,

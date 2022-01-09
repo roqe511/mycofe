@@ -92,10 +92,11 @@ class _CarouselState extends State<Carousel> {
                             margin:
                                 responsiveApp.edgeInsetsApp.allSmallEdgeInsets,
                             decoration: BoxDecoration(
-                                color: carousel[index].isSelected
-                                    ? Colors.white
-                                    : Colors.blueGrey,
-                                shape: BoxShape.circle),
+                              color: carousel[index].isSelected
+                                  ? Colors.white
+                                  : Colors.blueGrey,
+                              shape: BoxShape.circle,
+                            ),
                           ),
                         ),
                       ),
