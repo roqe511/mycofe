@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main ]
   pull_request:
-    branches: [ main ]
+    branches: [ develop ]
   workflow_dispatch:
 
 jobs:
@@ -18,11 +18,11 @@ jobs:
       - run: flutter config --enable-web
       - run: flutter build web
 
-      - name: Netlify Actions
-        uses: nwtgck/actions-netlify@v1.2.3
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v1.2
         with:
           publish-dir: './build/web'
-          production-branch: master
+          production-branch: main
           github-token: ${{ secrets.MY_GITHUB_SECRET }}
           deploy-message: "Deploy from GitHub Actions"
           enable-pull-request-comment: false
